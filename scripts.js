@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const bookingForm = document.getElementById('bookingForm');
     const notifications = document.getElementById('notifications');
     const sessionRecords = document.getElementById('session-records');
+    const hourlyReservations = document.getElementById('hourly-reservations');
     const matchBookingForm = document.getElementById('matchBookingForm');
     const matchNotifications = document.getElementById('matchNotifications');
 
