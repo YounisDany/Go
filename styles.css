@@ -6,12 +6,12 @@ body {
     direction: rtl;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     background-color: #fff;
     padding: 20px;
@@ -22,13 +22,20 @@ body {
 
 h1 {
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 label {
@@ -61,7 +68,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-#notifications, #session-records, #matchNotifications {
+#notifications, #hourly-reservations {
     margin-top: 20px;
     text-align: left;
     width: 100%;
@@ -75,4 +82,38 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.session {
+    background-color: #e7f3fe;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+.session h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.session div {
+    font-size: 16px;
+    color: #555;
+}
+
+.session button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.session button:hover {
+    background-color: #c82333;
 }
