@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز جلسات المباريات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حجز جلسات المباريات</h1>
+        <form id="matchBookingForm">
+            <label for="matchDate">تاريخ المباراة:</label>
+            <input type="date" id="matchDate" required>
+            <label for="matchSessionNumber">رقم الجلسة:</label>
+            <select id="matchSessionNumber">
+                <option value="1">جلسة 1</option>
+                <option value="2">جلسة 2</option>
+                <option value="3">جلسة 3</option>
+                <!-- Add more sessions as needed -->
+            </select>
+            <button type="submit">حجز الجلسة</button>
+        </form>
+        <div id="matchNotifications"></div>
+        <nav>
+            <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
